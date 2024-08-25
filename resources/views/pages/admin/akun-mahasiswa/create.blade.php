@@ -25,7 +25,7 @@
                 <!-- Email -->
                 <div>
                     <x-base.form-label for="crud-form-2">Email</x-base.form-label>
-                    <x-base.form-input class="w-full" id="crud-form-2" type="text" placeholder="Email" name="email_akun"
+                    <x-base.form-input class="w-full" id="crud-form-2" type="email" placeholder="Email" name="email_akun"
                         required />
                 </div>
 

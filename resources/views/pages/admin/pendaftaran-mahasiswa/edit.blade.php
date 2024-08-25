@@ -83,7 +83,7 @@
                 <!-- No Telp -->
                 <div>
                     <x-base.form-label for="crud-form-2">No Telp</x-base.form-label>
-                    <x-base.form-input class="w-full" id="crud-form-2" type="text" placeholder="No Telp"
+                    <x-base.form-input class="w-full" id="crud-form-2" type="number" placeholder="No Telp"
                         name="nomortelepon_akun" value="{{ $pendaftaranmahasiswaShowEdit->nomortelepon_akun ?? '-' }}"
                         required />
                 </div>
@@ -91,14 +91,14 @@
                 <!-- No Hp -->
                 <div>
                     <x-base.form-label for="crud-form-2">No Hp</x-base.form-label>
-                    <x-base.form-input class="w-full" id="crud-form-2" type="text" placeholder="No Hp"
+                    <x-base.form-input class="w-full" id="crud-form-2" type="number" placeholder="No Hp"
                         name="nomorhp_akun" value="{{ $pendaftaranmahasiswaShowEdit->nomorhp_akun ?? '-' }}" required />
                 </div>
 
                 <!-- Email -->
                 <div>
                     <x-base.form-label for="crud-form-2">Email</x-base.form-label>
-                    <x-base.form-input class="w-full" id="crud-form-2" type="text" placeholder="Email" name="email_akun"
+                    <x-base.form-input class="w-full" id="crud-form-2" type="email" placeholder="Email" name="email_akun"
                         value="{{ $pendaftaranmahasiswaShowEdit->email_akun ?? '-' }}" required />
                 </div>
 
