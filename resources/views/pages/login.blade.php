@@ -9,7 +9,7 @@
         style="background-image: url('{{ Vite::asset('resources/images/wallpaper3.png') }}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div
             class="fixed inset-0 flex justify-center items-center bg-black/60 transition-[visibility,opacity] w-screen h-screen">
-            <div class="flex items-center justify-center w-full h-full">
+            <div class="flex items-center justify-center w-full h-full mx-4 md:mx-8 lg:mx-16">
                 <div
                     class="mx-auto my-auto w-full max-w-lg rounded-md bg-white px-5 py-8 shadow-md dark:bg-darkmode-600 sm:w-3/4 sm:px-8 lg:w-2/4 xl:w-auto xl:bg-transparent xl:p-0 xl:shadow-none">
                     <h2 class="intro-y text-lg font-medium text-center py-2 bg-primary"
@@ -40,7 +40,6 @@
                                         </x-base.button>
                                     </div>
                                 </form>
-
                             </x-base.preview>
                         </div>
                     </x-base.preview-component>

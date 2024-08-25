@@ -15,7 +15,7 @@
         <x-base.button class="mr-1 w-24 text-white " type="button" variant="success" onclick="printTable()">
             Print
         </x-base.button>
-        <x-base.table class="to-print" striped class="border border-gray-300 mt-3">
+        <x-base.table id="printhere" class="to-print" striped class="border border-gray-300 mt-3">
             <x-base.table.tbody>
                 <x-base.table.tr>
                     <x-base.table.td class="whitespace-nowrap">
@@ -204,16 +204,20 @@
 <script>
     function printTable() {
         // Ambil elemen tabel
-        var tableContent = document.querySelector('.intro-y.box.p-5').innerHTML;
+        var tableContent = document.querySelector('#printhere').innerHTML;
+        console.log(tableContent, 'tableContent')
+        // var tableContent = document.querySelector('.intro-y.box.p-5').innerHTML;
 
         // Buat jendela baru untuk mencetak
         var printWindow = window.open('', '', 'height=500,width=800');
         printWindow.document.write('<html><head><title>Print Table</title>');
         printWindow.document.write(
-            '<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">'
+            `<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">`
         ); // Pastikan ini memuat CSS yang sesuai
         printWindow.document.write('</head><body>');
+        printWindow.document.write('<table border="1" cellpadding="5" cellspacing="0" style="width:100%">');
         printWindow.document.write(tableContent);
+        printWindow.document.write('</table>');
         printWindow.document.write('</body></html>');
         printWindow.document.close();
 
