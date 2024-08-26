@@ -106,16 +106,16 @@
                     <small style="color: red;">*</small>
                     <div>
                         <label class="inline-flex items-center">
-                            <input type="radio" name="kewarganegaraan_akun" value="WNA Asli"
-                                @if (optional($halamandaftarShowEdit)->kewarganegaraan_akun == 'WNA Asli') checked @endif required>
-                            <span class="ml-2">WNA Asli</span>
+                            <input type="radio" name="kewarganegaraan_akun" value="WNI Asli"
+                                @if (optional($halamandaftarShowEdit)->kewarganegaraan_akun == 'WNI Asli') checked @endif required>
+                            <span class="ml-2">WNI Asli</span>
                         </label>
                     </div>
                     <div>
                         <label class="inline-flex items-center">
-                            <input type="radio" name="kewarganegaraan_akun" value="WNA Keturunan"
-                                @if (optional($halamandaftarShowEdit)->kewarganegaraan_akun == 'WNA Keturunan') checked @endif required>
-                            <span class="ml-2">WNA Keturunan</span>
+                            <input type="radio" name="kewarganegaraan_akun" value="WNI Keturunan"
+                                @if (optional($halamandaftarShowEdit)->kewarganegaraan_akun == 'WNI Keturunan') checked @endif required>
+                            <span class="ml-2">WNI Keturunan</span>
                         </label>
                     </div>
                     <div>

@@ -199,7 +199,7 @@ class PageController extends Controller
             ->where('app_akun.id_akun', $form_id_akun)
             ->first();
 
-        return view('pages.admin.pendaftaran-mahasiswa.detail', [
+        return view('pages.admin.pendaftaran-mahasiswa.detail2', [
             'pendaftaranmahasiswaShowDetail' => $pendaftaranmahasiswaShowDetail
         ]);
     }

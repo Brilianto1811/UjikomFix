@@ -1,7 +1,7 @@
 @extends('../themes/base')
 
 @section('head')
-    <title>Login - Desa Digital</title>
+    <title>Login</title>
 @endsection
 
 @section('content')
